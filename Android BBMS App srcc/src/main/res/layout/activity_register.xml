@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:layout_marginTop="80dp"
+    android:background="#F9FCFF"
+    tools:context=".activity.RegisterActivity">
+
+
+    <!-- First Name EditText -->
+    <EditText
+        android:id="@+id/editFname"
+        android:hint="First Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Email EditText -->
+    <EditText
+        android:id="@+id/editEmail"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Mobile EditText -->
+    <EditText
+        android:id="@+id/editMobile"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Age EditText -->
+    <EditText
+        android:id="@+id/editAge"
+        android:hint="Age"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Gender EditText -->
+    <EditText
+        android:id="@+id/editGender"
+        android:hint="Gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Blood Group EditText -->
+    <EditText
+        android:id="@+id/editBloodGroup"
+        android:hint="Blood Group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Place EditText -->
+    <EditText
+        android:id="@+id/editPlace"
+        android:hint="Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- User Name EditText -->
+    <EditText
+        android:id="@+id/editUserName"
+        android:hint="User Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Password EditText -->
+    <EditText
+        android:id="@+id/editPassword"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Confirm Password EditText -->
+    <EditText
+        android:id="@+id/editConfirmPassword"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Button Layout -->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Register Button -->
+        <Button
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:layout_marginRight="20dp"
+            android:onClick="register"
+            android:text="Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Cancel Button -->
+        <Button
+            android:backgroundTint="@android:color/holo_red_light"
+            android:layout_marginLeft="20dp"
+            android:onClick="cancel"
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
